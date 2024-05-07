@@ -1,0 +1,28 @@
+@use '../../utils' as *;
+
+
+.bcb-hero{
+    &-content{
+        background: var(--bcb-hero-color);
+        border-radius: 34px 0 34px 34px;
+    }
+
+    &-text{
+        padding: 145px 0 0 120px;
+    }
+
+    &-title{
+        color: var(--bcb-common-black);
+        font-family: Outfit;
+        font-size: 130px;
+        font-weight: 700;
+        line-height: 1.1;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        & span{
+            display: block;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 1px var(--bcb-common-black);
+        }
+    }
+}

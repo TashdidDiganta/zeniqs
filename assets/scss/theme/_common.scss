@@ -1,0 +1,138 @@
+@use '../utils' as *;
+
+
+.w-img{
+	& img{
+		width: 100%;
+	}
+}
+.m-img{
+	& img{
+		max-width: 100%;
+	}
+}
+
+.fix {
+    overflow:hidden
+}
+.clear{
+    clear: both;
+}
+
+.z-index-1{
+	z-index: 1;
+}
+
+.z-index-11{
+	z-index: 11;
+}
+
+.overflow-y-visible{
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+.overflow-x-visible{
+	overflow-x: visible;
+	overflow-y: hidden;
+}
+
+.p-relative{
+	position: relative;
+}
+.p-absolute{
+	position: absolute;
+}
+.br-5{
+	border-radius: 5px;
+}
+.br-24{
+	border-radius: 24px;
+}
+
+img{
+	width: 100%;
+	height: 100%;
+}
+
+.bcb-transparent{
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99;
+	position: absolute;
+}
+
+
+.bcb-btn-1{
+	border-radius: 60px;
+    background: rgb(15, 41, 35);
+    color: rgb(255, 255, 255);
+    font-family: Outfit;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 15px 30px;
+	& i{
+		transform: rotate(45deg);
+	}
+}
+
+.bcb-btn-2{
+	background-color: var(--bcb-theme-color-2);
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 24px 40px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+    line-height: 1;
+	& i{
+		margin-left: 10px;
+	}
+}
+
+
+.section-title{
+	position: relative;
+    z-index: 99;
+    margin-bottom: 30px;
+    margin-top: -7px;
+	& span{
+		color: var(--bcb-theme-color-2);
+		margin-bottom: 10px;
+		display: inline-block;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+}
+
+.blue-bg{
+	background-color: var(--bcb-theme-color);
+}
+.tp-blue-bg{
+	background-color: var(--bcb-theme-color);
+}
+.tp-yellow-bg{
+	background-color: var(--bcb-theme-color-2);
+}
+.tp-nblue-bg{
+	background-color: var(--bcb-theme-nblue);
+}
+
+.tp-slide-transtion {
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+}
+.tp-brand-slide-element {
+	width: auto;
+	display: inline-block;
+}
