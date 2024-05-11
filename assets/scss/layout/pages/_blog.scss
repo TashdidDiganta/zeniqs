@@ -1,0 +1,116 @@
+@use '../../utils' as *;
+
+
+.bcb-blog{
+    &-item{
+        & .img{
+            img{
+                border-radius: 16px;
+            }
+        }
+        &::before{
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            background: linear-gradient(0deg, rgb(73, 128, 28), rgba(15, 41, 35, 0) 100%);
+            opacity: 0.8;
+        }
+
+        & .content {
+            left: 40px;
+            bottom: 40px;
+            & h3{
+                color: rgb(255, 255, 255);
+                font-size: 28px;
+                font-weight: 600;
+                line-height: 1.35;
+                margin-bottom: 23px;
+                letter-spacing: -1px;
+                &:hover{
+                    color: var(--bcb-hero-color);
+                }
+            }
+            & .admin{
+                align-items: center;
+                gap: 20px;
+                & img{
+                    width: 42px;
+                    height: 42px;
+                    border-radius: 50%;
+                }
+                & span{
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 38px;
+                    color: #A6A6A6;
+                    & a{
+                        color: #fff;
+                        &:hover{
+                           color: var(--bcb-hero-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+    &-card{
+        align-items: center;
+        gap: 20px;
+        box-sizing: border-box;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        box-shadow: 0px 16px 30px 0px rgba(1, 6, 20, 0.1);
+        padding: 10px;
+        & .img{
+            max-width: 198px;
+            width: 100%;
+            & a{
+                & img{
+                    object-fit: cover;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+    
+}
+
+.blog-card-content{
+    & h4{
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: -0.5px;
+        margin-bottom: 22px;
+        &:hover{
+            color: var(--bcb-hero-color);
+        }
+    }
+
+    & .admin{
+        align-items: center;
+        gap: 8px;
+        & img{
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+        }
+        & span{
+            display: block;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 38px;
+            color: rgba(255, 255, 255, 0.7);
+            & a:hover{
+                color: var(--bcb-hero-color);
+            }
+        }
+    }
+}

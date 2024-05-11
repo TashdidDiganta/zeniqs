@@ -1,0 +1,48 @@
+@use '../../utils' as *;
+
+.bcb-integrations{
+    &-area{
+        & .section-outer {
+            margin: 0 auto;
+            max-width: 1037px;
+        }
+        background-color: rgba( 245, 238, 233, 1);
+        & .inte-item{
+            background-color: #fff;
+            border-radius: 16px;
+            // margin: 0px 34px;
+            padding: 30px 25px;
+            height: 244px;
+            & .inte-top{
+                & .inte-title{
+                    & h5{
+                        margin-bottom: 0;
+                    }
+                    & span{
+                        font-size: 14px;
+                        color:#212529;
+                    }
+                }
+            }
+            & p{
+                margin-top: 20px;
+                margin-bottom: 40px;
+            }
+            & .inte-btn{
+                & a{
+                    font-size: 14px;
+                    font-weight: 800;
+                    color:#12715B;
+                }
+            }
+        }
+        & .all-inte-btn{
+            & a{
+                gap: 5;
+                font-weight: 800;
+                color:#12715B;
+            }
+        }
+    }
+
+}

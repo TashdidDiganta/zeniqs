@@ -1,0 +1,59 @@
+@use '../../utils' as *;
+
+
+.bcb-choose{
+    &-wrapper{
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 40px;
+
+    }
+
+    &-img{
+        & img{
+            border-radius: 16px;
+        }
+    }
+
+    &-item{
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        padding: 30px 30px 45px;
+        -webkit-transition: all 0.3s linear 0s;
+        -moz-transition: all 0.3s linear 0s;
+        -ms-transition: all 0.3s linear 0s;
+        -o-transition: all 0.3s linear 0s;
+        transition: all 0.3s linear 0s;
+        & .choose-top{
+            & .icon{
+                & svg{
+                    color: var(--bcb-hero-color);
+                }
+            }
+            & a{
+                & i{
+                    font-size: 30px;
+                    font-weight: 300;
+                    transform: rotate(45deg);
+                    color: rgba(255, 255, 255, 0.4);
+                }
+            }
+        }
+
+        & h2{
+            color: #fff;
+        }
+
+        & p{
+            color: #fff;
+        }
+        &:hover{
+        background: #2A4741;
+        border: 1px solid var(--bcb-hero-color);
+        & a{
+            & i{
+                color: var(--bcb-hero-color);
+            }
+        }
+        }
+    }
+}

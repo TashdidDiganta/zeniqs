@@ -1,0 +1,25 @@
+@use '../../utils' as *;
+
+.bcb-feedback-area{
+   & .feedback-item{
+    padding: 30px;
+    border: 1px solid rgba(131, 131, 131, 0.25);
+    border-radius: 16px;
+    & p{
+        color:#212529;
+        font-size: 18px;
+    }
+    & .client-profile{
+        gap: 15px;
+        & img{
+            width: 40px;
+            border-radius: 50%;
+        }
+        & .client-desi{
+            & h6{
+                margin-bottom: 0;
+            }
+        }
+    }
+    }
+}

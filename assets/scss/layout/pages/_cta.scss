@@ -1,1 +1,29 @@
 @use '../../utils' as *;
+
+.bcb-cta{
+    &-wrapper{
+        bottom: -100px;
+        padding: 65px 70px;
+        background-color: var(--bcb-theme-color-2);
+    }
+    &-img{
+        bottom: 0;
+        left: 100px;
+        height: 357px;
+        max-width: 393px;
+    }
+    &-items{
+        & h3{
+            color: #fff;
+        }
+        & .bcb-btn-2{
+            color: black;
+            background-color: #fff;
+        }
+    }
+}
+
+.bcb-shape{
+    top: 0;
+    left: 21%;
+}

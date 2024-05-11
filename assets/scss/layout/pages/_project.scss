@@ -1,0 +1,81 @@
+@use '../../utils' as *;
+
+
+.bcb-project{
+    &-area{
+
+    }
+
+    &-inner{
+        border-radius: 34px;
+        background-color: #2a4741;
+    }
+    &-item{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        & .project-img{
+            width: 620px;
+            border-radius: 17px;
+            margin-bottom: 20px;
+        }
+        & .project-content{
+            & .top{
+                & {
+                    & h3{
+                        color: #fff;
+                        font-size: 32px;
+                        font-weight: 600;
+                        line-height: 1.3;
+                        margin-bottom: 0;
+                    }
+                }
+                & a{
+                    & i{
+                        color: rgba(255, 255, 255, 0.2);
+                        font-size: 30px;
+                        font-weight: 700;
+                        transform: rotate(45deg);
+                    }
+                }
+
+                &:hover a{
+                    color: var(--bcb-hero-color);
+                }
+            }   
+            & p{
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.bcb-project-wrapper {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    align-items: start;
+    & .project-item-single:first-child{
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+
+.project-client{
+    gap: 10px;
+    &-img{
+        width: 60px;
+    }
+    & img:not(:first-child) {
+        margin-left: -20px;
+    }
+    &-info{
+        & h3{
+            color: #fff;
+            margin-bottom: 0;
+        }
+        & p{
+            color: #fff;
+        }
+    }
+}
