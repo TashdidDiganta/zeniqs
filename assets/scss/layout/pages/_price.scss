@@ -7,6 +7,12 @@
 }
 
 .bcb-price-area {
+    @media #{$lg}{
+        padding: 80px 0px;
+     }
+     @media #{$md}{
+        padding: 50px 0px;
+     }
     & .price-item{
         padding: 30px;
 

@@ -1,6 +1,9 @@
 @use '../../utils' as *;
 
 .bcb-feedback-area{
+    @media #{$md}{
+        padding: 50px 0px;
+     }
    & .feedback-item{
     padding: 30px;
     border: 1px solid rgba(131, 131, 131, 0.25);

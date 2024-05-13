@@ -239,6 +239,9 @@ a:hover{
 
 .bcb-container{
 	padding: 0 90px;
+	@media #{$lg, $md}{
+		padding: 0 30px;
+	}
 }
 
 a,

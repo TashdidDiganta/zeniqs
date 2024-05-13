@@ -5,10 +5,24 @@
     &-content{
         background: var(--bcb-hero-color);
         border-radius: 34px 0 34px 34px;
+        & .hero-img{
+            @media #{$lg, $md}{
+                margin: 45px 30px 45px 30px;
+             }
+        }
     }
 
     &-text{
         padding: 145px 0 0 120px;
+        @media #{$xl}{
+            padding: 145px 0 0 40px;
+         }
+         @media #{$lg}{
+            padding: 145px 0 0 35px;
+         }
+         @media #{$md}{
+            padding: 88px 0 0 32px;
+         }
     }
 
     &-title{
@@ -19,10 +33,22 @@
         line-height: 1.1;
         text-transform: uppercase;
         margin-bottom: 10px;
+             @media #{$xxlm}{
+                font-size: 100px;
+             }
+             @media #{$xl}{
+                font-size: 85px;
+             }
+             @media #{$lg}{
+                font-size: 80px;
+             }
+             @media #{$md}{
+                font-size: 65px;
+             }
         & span{
             display: block;
             -webkit-text-fill-color: transparent;
             -webkit-text-stroke: 1px var(--bcb-common-black);
         }
-    }
+    } 
 }

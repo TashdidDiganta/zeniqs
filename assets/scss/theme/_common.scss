@@ -51,7 +51,7 @@
 
 img{
 	width: 100%;
-	height: 100%;
+	// height: 100%;
 }
 
 .bcb-transparent{
@@ -79,6 +79,10 @@ img{
     padding: 15px 30px;
 	& i{
 		transform: rotate(45deg);
+	}
+
+	@media #{$lg}{
+		padding: 15px 18px;
 	}
 }
 
@@ -132,6 +136,12 @@ img{
 		display: inline-block;
 		font-weight: 500;
 		text-transform: uppercase;
+	}
+
+	& h2{
+		@media #{$lg}{
+            font-size: 30px;
+         }
 	}
 }
 

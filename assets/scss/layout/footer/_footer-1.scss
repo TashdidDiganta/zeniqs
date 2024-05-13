@@ -7,6 +7,10 @@
     &-wrapper{
     }
     &-widget{
+        @media #{$md}{
+            padding-top: 20px;
+            margin-left: 0;
+         }
         & .widget-top{
             & h3{
                 font-weight: bold;

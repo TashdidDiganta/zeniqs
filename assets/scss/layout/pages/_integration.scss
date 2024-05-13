@@ -2,6 +2,10 @@
 
 .bcb-integrations{
     &-area{
+        @media #{$md}{
+            padding-top: 50px;
+            padding-bottom: 50px;
+         }
         & .section-outer {
             margin: 0 auto;
             max-width: 1037px;

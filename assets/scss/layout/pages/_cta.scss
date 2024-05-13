@@ -11,14 +11,19 @@
         left: 100px;
         height: 357px;
         max-width: 393px;
+     
     }
     &-items{
+
         & h3{
             color: #fff;
         }
         & .bcb-btn-2{
             color: black;
             background-color: #fff;
+        }
+        @media #{$lg,$md}{
+            margin-left: 50px;
         }
     }
 }

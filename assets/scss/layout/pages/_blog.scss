@@ -2,6 +2,9 @@
 
 
 .bcb-blog{
+    &-area{
+        padding-bottom: 50px;
+    }
     &-item{
         & .img{
             img{
