@@ -59,7 +59,76 @@
     }
 }
 
+.bcb-contact-section {
+    & .contact-info{
+            padding: 40px;
+            display: block;
+            background-color: var(--bcb-hero-color);
+        &-items{
+            gap: 20px;
+            display: flex;
+            position: relative;
+            align-items: center;
+            padding-bottom: 20px;
+            justify-content: flex-start;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            & h3, p{
+                color: var(--bcb-theme-color);
+            }
+        }
+    }
 
+    & .contact-content{
+        margin-left: 40px;
+        & .contact-form-items{
+            margin-top: 30px;
+            & .form-clt{
+                & span{
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                    display: inline-block;
+                    text-transform: capitalize;
+                    color: var(--bcb-theme-color);
+                }
+                & input{
+                    border: 1px solid #E3E3E3;
+                    color:#585858;
+                    padding: 18px 20px;
+                    border-radius: 5px;
+                }
+                & textarea {
+                    border: 1px solid #E3E3E3;
+                    color:#585858;
+                    padding: 18px 20px;
+                    border-radius: 5px;
+                    // padding-bottom: 300px;
+                }
+            } 
+        }
+     
+    }
+}
+
+ .video-image{
+    position: relative;
+    & .video-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9;
+        & .video-btn {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            border-radius: 50%;
+            color: var(--bcb-hero-color);
+            background-color: #fff;
+        }
+    }
+}
 
 @keyframes cir36 {
     100% {

@@ -4,6 +4,9 @@
     &-title{
         color: var(--bcb-title-sce-color);
     }
+    &-desc{
+        color: var(--bcb-title-sce-color);
+    }
     &-area{
         @media #{$md,$xs}{
             padding-top: 50px;
@@ -51,10 +54,11 @@
             }
         }
         & .all-inte-btn{
+            display: flex;
             & a{
                 gap: 5;
                 font-weight: 800;
-                color:#12715B;
+                color:#fff;
             }
         }
     }

@@ -3,7 +3,13 @@
 
 .bcb-offer{
     &-area{
-        background-color: #18185e;
+        background-color: var(--bcb-hero-color);
+    }
+    &-subtitle{
+        color: var(--bcb-heading-color)!important;
+    }
+    &-title{
+        color: var(--bcb-heading-color);
     }
 }
 
@@ -23,7 +29,7 @@
         width: 100%;
         height: 100%;
         content: "";
-        border: 1px solid #fff;
+        border: 1px solid var(--bcb-theme-color);
         opacity: 0.3;
         border-radius: 8px;
         top: 0;
@@ -70,7 +76,7 @@
         line-height: 70px;
         text-align: center;
         border-radius: 50%;
-        background: linear-gradient(180deg, #3C72FC -210.71%, #00060C 100%);
+        background: linear-gradient(180deg, var(--bcb-theme-color) -210.71%, #00060C 100%);
         margin: 0 auto;
         margin-top: -35px;
         transition: all 0.4s ease-in-out;
@@ -79,7 +85,7 @@
     & .content {
         margin-top: 20px;
         & h5{
-            color: #fff;
+            color: var(--bcb-theme-color);
         }
     }
     
