@@ -58,7 +58,6 @@ img{
 	top: 0;
 	left: 0;
 	right: 0;
-	bottom: 0;
 	z-index: 99;
 	position: absolute;
 }
@@ -84,6 +83,32 @@ img{
 	@media #{$lg}{
 		padding: 15px 18px;
 	}
+	@media #{$xs}{
+		padding: 14px 15px;
+	}
+}
+.bcb-bred-btn{
+	border-radius: 60px;
+    background: var(--bcb-hero-color);
+    color: #0F2923;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 15px 30px;
+	& i{
+		transform: rotate(45deg);
+	}
+
+	@media #{$lg}{
+		padding: 15px 18px;
+	}
+	@media #{$xs}{
+		padding: 14px 15px;
+	}
 }
 
 .bcb-btn-2{
@@ -105,6 +130,10 @@ img{
 }
 
 .bcb-btn-3{
+	@media #{$xs}{
+		padding-top: 10px!important;
+		text-align: start!important;
+	 }
 	& a{
 		border-radius: 60px;
 		background: var(--bcb-hero-color);
@@ -142,7 +171,23 @@ img{
 		@media #{$lg}{
             font-size: 30px;
          }
+		 @media #{$xs}{
+            font-size: 25px;
+			br{
+				display: none;
+			}
+         }
 	}
+	@media #{$xs}{
+		margin-bottom: 20px;
+	 }
+}
+
+.section-title-area{
+	display: flex;
+	@media #{$xs}{
+		display: block;
+	 }
 }
 
 .section-outer {
@@ -161,6 +206,10 @@ img{
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+	@media #{$xs}{
+		padding-top: 0!important;
+		padding-bottom: 0!important;
+	 }
 }
 
 .zpsection-title{
@@ -180,7 +229,13 @@ img{
 		font-weight: 600;
 		line-height: 1.22;
 		letter-spacing: -1.1px;
+		@media #{$xs}{
+			font-size: 25px;
+		 }
 	}
+	@media #{$xs}{
+		padding-top: 60px!important;
+	 }
 }
 
 .blue-bg{

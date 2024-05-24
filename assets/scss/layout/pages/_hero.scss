@@ -3,13 +3,29 @@
 
 .bcb-hero{
     &-content{
+        display: flex;
         background: var(--bcb-hero-color);
         border-radius: 34px 0 34px 34px;
         & .hero-img{
-            @media #{$lg, $md}{
+            @media #{$lg}{
                 margin: 45px 30px 45px 30px;
              }
+             @media #{$md}{
+               margin: 45px 30px 45px 0px;
+            }
         }
+        @media #{$xs}{
+         margin-top: 100px;
+         display: block;
+      }
+      & .hero-img{
+         width: 90%;
+         padding-right: 0;
+         @media #{$xs}{
+            margin-left: 20px;
+            width: 90%;
+         }
+      }
     }
 
     &-text{
@@ -22,6 +38,9 @@
          }
          @media #{$md}{
             padding: 88px 0 0 32px;
+         }
+         @media #{$xs}{
+            padding: 100px 50px 0 40px;
          }
     }
 
@@ -45,10 +64,25 @@
              @media #{$md}{
                 font-size: 65px;
              }
+             @media #{$xs}{
+               font-size: 45px;
+            }
         & span{
             display: block;
             -webkit-text-fill-color: transparent;
             -webkit-text-stroke: 1px var(--bcb-common-black);
         }
     } 
+}
+
+.bcb-container{
+   @media #{$xs}{
+      padding: 0px 20px;
+   }
+}
+
+.justify{
+   @media #{$xs}{
+      justify-content: end!important;
+   }
 }

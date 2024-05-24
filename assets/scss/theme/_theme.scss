@@ -242,6 +242,9 @@ a:hover{
 	@media #{$lg, $md}{
 		padding: 0 30px;
 	}
+	@media #{$sm}{
+		padding: 0 15px;
+	}
 }
 
 a,

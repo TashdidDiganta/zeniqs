@@ -5,9 +5,10 @@
         background-color: #0f0d1d;
     }
     &-wrapper{
+
     }
     &-widget{
-        @media #{$md}{
+        @media #{$md,$xs}{
             padding-top: 20px;
             margin-left: 0;
          }
@@ -104,3 +105,11 @@
     bottom: 0;
     right: 0;
 }
+
+.ml{
+    @media #{$lg,$md}{
+        margin-left: 50px;
+     }
+}
+
+

@@ -1,9 +1,5 @@
 (function ($) {
     "use strict";
-
-
-
-
     // testimonial slider 
     var swiper = new Swiper(".tp-testimonial-active", {
         slidesPerView: 1,
@@ -51,9 +47,7 @@
         },
     });
 
-
-
-
-
-
 })(jQuery);
+
+
+gsap

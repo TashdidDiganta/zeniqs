@@ -5,6 +5,10 @@
         bottom: -100px;
         padding: 65px 70px;
         background-color: var(--bcb-theme-color-2);
+         @media #{$xs}{
+            text-align: center;
+            padding: 65px 30px;
+         }
     }
     &-img{
         bottom: 0;
@@ -14,9 +18,14 @@
      
     }
     &-items{
-
+        display: flex;
         & h3{
             color: #fff;
+            @media #{$xs}{
+                & br{
+                    display: none;
+                }
+            }
         }
         & .bcb-btn-2{
             color: black;
@@ -24,6 +33,10 @@
         }
         @media #{$lg,$md}{
             margin-left: 50px;
+        }
+        @media #{$xs}{
+            display: block;
+            margin-left: 0;
         }
     }
 }

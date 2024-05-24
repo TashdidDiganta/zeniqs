@@ -17,6 +17,7 @@
     }
   }
   &-checklist{
+    display: flex;
     margin-top: 30px;
     align-items: center;
     gap: 65px;
@@ -32,13 +33,18 @@
     }
     & .icon-items{
       gap: 16px;
+      display: flex;
       padding: 28px 25px;
       background-color: #fff;
       box-shadow:  0px 4px 25px rgba(0, 0, 0, 0.06);
       border-left: 3px solid var(--bcb-theme-color-2);
     }
+    @media #{$xs}{
+      display: block;
+   }
   }
   &-author{
+    display: flex;
     gap: 30px;
     & .author-icon{
       gap: 30px;
@@ -66,6 +72,9 @@
         }
       }
     }
+    @media #{$xs}{
+      display: block;
+   }
   }
 }
 
@@ -73,9 +82,16 @@
   top: 32%;
   left: -76px;
   z-index: 1;
+  @media #{$xs}{
+    top: -13%;
+    left: -55px;
+ }
 }
 .about-shape-2 {
   right: 195px;
   bottom: 25px;
   z-index: 1;
+  @media #{$xs}{
+    display: none;
+ }
 }

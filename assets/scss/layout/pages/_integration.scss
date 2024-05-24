@@ -1,18 +1,28 @@
 @use '../../utils' as *;
 
 .bcb-integrations{
+    &-title{
+        color: var(--bcb-title-sce-color);
+    }
     &-area{
-        @media #{$md}{
+        @media #{$md,$xs}{
             padding-top: 50px;
             padding-bottom: 50px;
          }
         & .section-outer {
             margin: 0 auto;
             max-width: 1037px;
+            & .section-inner{
+                & h2{
+                    @media #{$xs}{
+                        font-size: 25px;
+                     }
+                }
+            }
         }
-        background-color: rgba( 245, 238, 233, 1);
+        background-color: rgb(42, 71, 65);
         & .inte-item{
-            background-color: #fff;
+            background-color:var(--bcb-hero-color);
             border-radius: 16px;
             // margin: 0px 34px;
             padding: 30px 25px;
