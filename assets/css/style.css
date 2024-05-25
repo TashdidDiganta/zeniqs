@@ -297,6 +297,20 @@ a:hover {
   }
 }
 
+.bcb-contact-container {
+  padding: 0 60px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .bcb-contact-container {
+    padding: 0 20px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .bcb-contact-container {
+    padding: 0 10px;
+  }
+}
+
 a,
 button {
   color: inherit;
@@ -17376,11 +17390,37 @@ img {
 }
 .bcb-header .bcb-about-header-r {
   gap: 30px;
-  padding: 18px 45px 18px 45px;
+  padding: 18px 0px 18px 45px;
   border-radius: 34px 34px 0 0;
   width: max-content;
   position: relative;
   z-index: 1;
+}
+@media (max-width: 768px) {
+  .bcb-header .bcb-about-header-r {
+    padding: 18px 3px 18px 17px;
+  }
+}
+
+.menu-btn, .bcb-menu-btn {
+  color: #fff;
+  font-size: 30px;
+}
+
+.bcb-close-btn {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.mobile-menu li {
+  margin-bottom: 5px;
+  border-bottom: 1px solid #c7c6c6;
+}
+.mobile-menu li a {
+  color: #fff;
+  padding: 5px 0px;
+  display: inline-block;
 }
 
 .bcb-faq-area .right-shape {
@@ -17994,6 +18034,18 @@ img {
   position: relative;
   z-index: 9;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .choose-us-image {
+    max-width: 408px;
+  }
+}
+@media (max-width: 768px) {
+  .choose-us-image {
+    margin-bottom: 0px;
+    max-width: 293px;
+    margin-top: 0px;
+  }
+}
 .choose-us-wrapper .choose-content {
   position: relative;
   z-index: 9;
@@ -18043,6 +18095,11 @@ img {
 }
 .choose-us-wrapper .choose-content .progress-wrap .pro-items .progress .load2 {
   animation: load2 3s normal forwards;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .choose-us-wrapper .choose-content {
+    margin-top: 150px;
+  }
 }
 
 .choose-shape {
@@ -18100,7 +18157,7 @@ img {
   line-height: 34px;
   text-align: center;
   border-radius: 50%;
-  background-color: var(--bcb-theme-color-2);
+  background-color: #40916c;
   color: #fff;
   position: absolute;
   top: 0;
@@ -18237,14 +18294,11 @@ img {
   gap: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   position: relative;
   padding-bottom: 40px;
 }
 .contact-info-items:not(:last-child) {
   height: 110px;
-  padding-right: 100px;
-  border-right: 1px solid #242449;
 }
 .contact-info-items .icon {
   width: 65px;
@@ -18368,7 +18422,7 @@ img {
   margin-top: -70px;
   position: absolute;
   z-index: 99;
-  background-color: var(--bcb-theme-color-2);
+  background-color: #40916c;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   -webkit-transition: -webkit-transform 500ms ease;

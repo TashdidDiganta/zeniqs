@@ -50,10 +50,38 @@
     }
     & .bcb-about-header-r{
         gap: 30px;
-        padding: 18px 45px 18px 45px;
+        padding: 18px 0px 18px 45px;
         border-radius: 34px 34px 0 0;
         width: max-content;
         position: relative;
         z-index: 1;
+        @media #{$xs}{
+            padding: 18px 3px 18px 17px;
+         }
+    }
+}
+
+
+
+.menu-btn,.bcb-menu-btn{
+    color: #fff;
+    font-size: 30px;
+}
+
+.bcb-close-btn{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.mobile-menu{
+    & li{
+        margin-bottom: 5px;
+        border-bottom: 1px solid #c7c6c6;
+        & a{
+            color: #fff;
+            padding: 5px 0px;        
+            display: inline-block;
+        }
     }
 }

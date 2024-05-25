@@ -77,6 +77,15 @@
         margin-top: 30px;
         position: relative;
         z-index: 9;
+        @media #{$md}{
+            max-width: 408px;
+         }
+
+         @media #{$xs}{
+            margin-bottom: 0px;
+            max-width: 293px;
+            margin-top: 0px;
+         }
     }
 
     &-wrapper{
@@ -137,6 +146,9 @@
 
                 }
             }
+            @media #{$md}{
+                margin-top: 150px;
+             }
         }
     }
 }

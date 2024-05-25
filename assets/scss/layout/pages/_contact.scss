@@ -13,13 +13,10 @@
         gap: 20px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
         position: relative;
         padding-bottom: 40px;
         &:not(:last-child){
-            height: 110px;
-            padding-right: 100px;
-            border-right: 1px solid #242449;
+            height: 110px;       
         }
 
         & .icon{

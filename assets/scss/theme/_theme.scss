@@ -250,6 +250,15 @@ a:hover{
 	}
 }
 
+.bcb-contact-container{
+	padding: 0 60px;
+	@media #{$lg, $md}{
+		padding: 0 20px;
+	}
+	@media #{$sm}{
+		padding: 0 10px;
+	}
+}
 a,
 button {
 	color: inherit;
