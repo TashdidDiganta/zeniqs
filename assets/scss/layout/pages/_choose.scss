@@ -102,8 +102,8 @@
                 & .choose-list{
                     & li{
                         & i{
-                            color: var(--bcb-theme-color-2);
                             margin-right: 5px;
+                            color: var(--bcb-hero-color);
                         }
                     }
                 }
@@ -136,7 +136,7 @@
                             border-radius: 0;
                             border-radius: 16px;
                             animation: load 3s normal forwards;
-                            background: var(--bcb-theme-color-2);
+                            background: #132351;
                         }
                         & .load2{
                             animation: load2 3s normal forwards;

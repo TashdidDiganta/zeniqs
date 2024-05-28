@@ -4,7 +4,8 @@
     &-wrapper{
         bottom: -100px;
         padding: 65px 70px;
-        background-color: var(--bcb-theme-color-2);
+        background-color: var(--bcb-hero-color);
+        opacity: .9;
          @media #{$xs}{
             text-align: center;
             padding: 65px 30px;
