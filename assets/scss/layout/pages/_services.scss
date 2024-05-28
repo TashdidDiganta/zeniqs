@@ -12,6 +12,14 @@
             padding: 35px 30px;
             position: relative;
             z-index: 9;
+            & h4{
+                & a{
+                    transition: .3s;
+                    &:hover{
+                        color: var(--bcb-hero-color);
+                    }
+                }
+            }
             & .service-icon{
                 width: 70px;
                 height: 70px;
@@ -22,15 +30,16 @@
                 margin-top: -70px;
                 position: absolute;
                 z-index: 99;
-                background-color: #40916c;
+                background-color: #F4F5F8;
                 -webkit-transition: all 0.4s ease-in-out;
                 transition: all 0.4s ease-in-out;
                 -webkit-transition: -webkit-transform 500ms ease;
                 transition: -webkit-transform 500ms ease;
                 transition: transform 500ms ease;
-                & img{
-                    width: 40px;
-                    filter: grayscale(100%) brightness(300%);
+                & i{
+                    font-size: 30px;
+                    padding-top: 15px;
+                    color: var(--bcb-hero-color);
                 }
             }
             
@@ -40,8 +49,8 @@
             bottom: 8px;
             right: 8px;
             opacity: 0.2;
-            & img{
-                width: 40px;
+            & i{
+                font-size: 30px;
             }
         }
     }

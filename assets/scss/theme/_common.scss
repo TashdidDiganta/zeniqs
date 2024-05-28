@@ -65,7 +65,7 @@ img{
 
 .bcb-btn-1{
 	border-radius: 60px;
-    background: rgb(15, 41, 35);
+    background: var(--bcb-btn-color);
     color: rgb(255, 255, 255);
     font-family: Outfit;
     font-size: 18px;
@@ -112,7 +112,7 @@ img{
 }
 
 .bcb-btn-2{
-	background-color: var(--bcb-theme-color-2);
+	background-color: var(--bcb-btn-color);
     color: #fff;
     display: inline-block;
     font-size: 16px;
@@ -160,7 +160,7 @@ img{
     margin-bottom: 30px;
     margin-top: -7px;
 	& span{
-		color: var(--bcb-theme-color-2);
+		color: var(--bcb-hero-color);
 		margin-bottom: 10px;
 		display: inline-block;
 		font-weight: 500;

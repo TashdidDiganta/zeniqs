@@ -31,7 +31,7 @@
 
         & .accordion-button {
             font-weight: 600;
-            color: var(--bcb-theme-color-2);
+            color: var(--bcb-hero-color);
             letter-spacing: -0.2px;
             border: 0;
             border-radius: 0;
@@ -51,12 +51,48 @@
             color: #0F0D1D;
             background-color: #F3F7FB;
         }
+    }
 
-        & .accordion-button::after {
-            font-weight: 500;
-            transition: all 0.3s ease-in-out !important;
-            background-image: url(../../../img/icon/angle-double-right-solid.svg);
-            color: var(--bcb-theme-color-2);
+    & .faq-items{
+        & .faqs-two__item__funfact__item {
+            position: absolute;
+            top: -35px;
+            right: 0;
+            background: var(--ostech-base, #FFAA17);
+            padding: 30px 50px;
+            display: inline-block;
+            &::after {
+                content: "";
+                width: 62px;
+                height: 37px;
+                position: absolute;
+                top: 0;
+                left: -61.5px;
+                background: var(--ostech-secondary, #232429);
+                clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+            }
+            & .faqs-two__item__funfact__item__count {
+                margin-top: -30px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 263%;
+                color: var(--ostech-text-dark, #222429);
+                display: flex;
+                align-items: center;
+                margin-bottom: -30px;
+                padding-bottom: 0;
+            }
+            & .faqs-two__item__funfact__item__text {
+                margin-top: -20px;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 235%;
+                color: var(--ostech-text-dark, #222429);
+                text-align: center;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
         }
     }
 }

@@ -2,7 +2,6 @@
 
 
 .bcb-header{
-    padding: 28px 0px;
     &-nav{
         & ul{
             & li{
@@ -18,26 +17,12 @@
 
     &-right{
         gap: 30px;
-        padding: 18px 45px 18px 45px;
-        border-radius: 34px 34px 0 0;
-        width: max-content;
-        position: relative;
-        z-index: 1;
-        background-color: var(--bcb-hero-color);
         .bcb-menu-icon{
             & button{
                 & i{
+                    color: #fff;
                     font-size: 30px;
                 }
-            }
-        }
-        .bcb-header-shape{
-            bottom: 0;
-            left: -34px;
-            transform: rotate(180deg);
-            & svg{
-                width: 34px;
-                color: var(--bcb-hero-color);
             }
         }
         @media #{$lg}{

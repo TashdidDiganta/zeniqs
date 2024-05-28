@@ -8,9 +8,10 @@
             line-height: 100px;
             text-align: center;
             border-radius: 50%;
-            background-color: #fff;
+            background: #fff6e8;
             box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
             position: relative;
+            transition: .4s;
             margin: 0 auto;
             & h6{
                 width: 34px;
@@ -18,15 +19,25 @@
                 line-height: 34px;
                 text-align: center;
                 border-radius: 50%;
-                background-color: #40916c;
+                background-color: var(--bcb-btn-color);
                 color: #fff;
                 position: absolute;
                 top: 0;
                 left: 0;
                 font-weight: 400;
             }
-            & img{
-                width: 50px;
+            & i{
+                font-size: 50px;
+                transition: .4s;
+                padding-top: 25px;
+                color: var(--bcb-hero-color);
+            }
+
+            &:hover{
+                background-color: var(--bcb-hero-color);
+                & i{
+                    color: #fff;
+                }
             }
 
         }
