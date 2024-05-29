@@ -1,1 +1,1 @@
-sass --watch '/home/diganta/Desktop/frontend practis/zeniqs/assets/scss/main.scss':'/home/diganta/Desktop/frontend practis/zeniqs/assets/css/style.css'
+sass --watch "C:\Users\Diganta\Desktop\frontend practis\zeniqs\assets\scss\main.scss":"C:\Users\Diganta\Desktop\frontend practis\zeniqs\assets\css\style.css" 

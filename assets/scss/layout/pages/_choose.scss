@@ -18,6 +18,7 @@
 
     &-img{
         & img{
+            height: 630px;
             border-radius: 16px;
         }
     }
@@ -55,8 +56,8 @@
             color: #fff;
         }
         &:hover{
-        background: #2A4741;
-        border: 1px solid var(--bcb-hero-color);
+            border: 1px solid var(--bcb-hero-color);
+            background: linear-gradient(-9deg, var(--bcb-hero-color), rgba(15, 41, 35, 0) 100%);
         & a{
             & i{
                 color: var(--bcb-hero-color);
